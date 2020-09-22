@@ -120,7 +120,7 @@ Project Link: [https://marandaz.github.io/password-generator/](https://marandaz.
 ## Acknowledgements
 
 * **Instructors:** Shout out to my Bootcamp instructor, John Young, for helping pave the path to a brighter future. Also credit given to Dan Mont-Eton (TA) and Brittany Fortner (tutor) -- extremely appreciative of the support! (
-* [Page Logo]: )https://dl2.macupdate.com/images/icons256/60686.png)
+* [Page Logo](https://dl2.macupdate.com/images/icons256/60686.png)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
