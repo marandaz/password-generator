@@ -1,6 +1,4 @@
 # Password-Generator
-## Description 
-
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
@@ -122,8 +120,21 @@ Project Link: [https://marandaz.github.io/password-generator/](https://marandaz.
 ## Acknowledgements
 
 * **Instructors:** Shout out to my Bootcamp instructor, John Young, for helping pave the path to a brighter future. Also credit given to Dan Mont-Eton (TA) and Brittany Fortner (tutor) -- extremely appreciative of the support! 
+* [Page Logo]: https://dl2.macupdate.com/images/icons256/60686.png
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[Page Logo]: https://dl2.macupdate.com/images/icons256/60686.png
+[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=flat-square
+[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=flat-square
+[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
+[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=flat-square
+[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
+[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=flat-square
+[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
+[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=flat-square
+[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/othneildrew
+[product-screenshot]: images/screenshot.png
