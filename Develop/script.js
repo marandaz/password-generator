@@ -3,9 +3,6 @@ function generatePassword() {
 
   // When User clicks the Generate Password button, they receive a prompt to confirm how long their password should be, as long as the length is between 8-128 characters
   var confirmLength = parseInt(prompt("Select desired password length. (Must be between 8-128 characters)"));
-  var x = confirmLength.toString();
-  var x = str.length;
-  console.log(passwordgen);
 
   // If the User inputs anything other than a number, they will receive an error alert
   if (isNaN(confirmLength)) {
@@ -23,7 +20,7 @@ function generatePassword() {
   }
 
 
-  
+
   // User is given option to include lowercase letters in password
   var confirmLowercase = confirm("Do you want lowercase letters in your password?");
   
@@ -39,20 +36,20 @@ function generatePassword() {
   
   // If any of the above Confirms are true, they will be pushed into the array of functionAr
   var functionAr = [];
-  if (confirmLowercase) {
-    functionAr.push(getRandomLower);
-  }
+  // if (confirmLowercase) {
+  //   functionAr.push(getRandomLower)();
+  // }
 
   if (confirmUppercase) {
-    functionAr.push(getRandomUpper);
+    functionAr.push(getRandomUpper)();
   }
   
   if (confirmNumbers) {
-    functionAr.push(getRandomNumber);
+    functionAr.push(getRandomNumber)();
   }
   
   if (confirmSpecial) {
-    functionAr.push(getRandomSpecial);
+    functionAr.push(getRandomSpecial)();
   }
 
   // If all Confirms return false, User receives error alert message that at least one must be true to receive random password
@@ -62,42 +59,34 @@ function generatePassword() {
 
   // If User confirms they want lowercase, a random lowercase letter is chosen
   function getRandomLower() {
-    if (confirmLowercase) {
       return String.fromCharCode(Math.floor(Math.random() * 26) + 97)
-    }
   }
   
   // If user confirms they want uppercase, a random uppercase letter is chosen
   function getRandomUpper() {
-    if (confirmUppercase) {
       return String.fromCharCode(Math.floor(Math.random() * 26) + 65)
-    } 
   }
   
   // If User confirms they want numbers, a random number is chosen
   function getRandomNumber() {
-    if (confirmNumbers) {
       return String.fromCharCode(Math.floor(Math.random() * 10) + 48)
-    }
   }
   
   // If User confirms they want special characters, a random special character is chosen
   function getRandomSpecial() {
     const symbols = '!@#$%^&*(){}[]=<>/,.'
-    if (confirmSpecial) {
       return symbols[Math.floor(Math.random() * symbols.length)];
-    }
   }
 
   // For Loop created to choose a random character (based on the User's preferences) for each character in the specified password length
   for (var i = 0; i < confirmLength; i++) {
-      var randomFunction = Math.floor(Math.random() * functionAr.length);
-      var randomCharacter = functionAr[randomFunction]();
+      var randomNumber = Math.floor(Math.random() * functionAr.length);
+      var randomCharacter = functionAr[randomFunction];
       passwordgen = passwordgen + randomCharacter;
   }
 
   // Returns the random password on the User's screen
-  return newpassword;
+  return passwordgen;
 }
 
 ///////////////////////////////////////////////////////////////////////
