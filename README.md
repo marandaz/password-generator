@@ -42,7 +42,9 @@
 
 <p align="center">
 <a href="https://marandaz.github.io/password-generator/">
-    <img src="Images\Password-Generator.gif" alt="gif of Password Generator"/>
+    <img src="Images/initial.png" alt="on initial page load"/>
+    .
+    <img src="Images/clickedgenerate.png" alt="on first click"/>
 <!-- MARANDA TO UPDATE LINK ABOVE SO IT WORKS -->
 </a>
 </p>
@@ -121,6 +123,7 @@ Project Link: [https://marandaz.github.io/password-generator/](https://marandaz.
 
 * **Instructors:** Shout out to my Bootcamp instructor, John Young, for helping pave the path to a brighter future. Also credit given to Dan Mont-Eton (TA) and Brittany Fortner (tutor) -- extremely appreciative of the support! (
 * [Page Logo](https://dl2.macupdate.com/images/icons256/60686.png)
+* [String for special characters](https://owasp.org/www-community/password-special-characters)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
