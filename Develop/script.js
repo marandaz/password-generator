@@ -36,9 +36,9 @@ function generatePassword() {
   
   // If any of the above Confirms are true, they will be pushed into the array of functionAr
   var functionAr = [];
-  // if (confirmLowercase) {
-  //   functionAr.push(getRandomLower)();
-  // }
+  if (confirmLowercase) {
+    functionAr.push(getRandomLower)();
+  }
 
   if (confirmUppercase) {
     functionAr.push(getRandomUpper)();
@@ -70,6 +70,7 @@ function generatePassword() {
   // If User confirms they want numbers, a random number is chosen
   function getRandomNumber() {
       return String.fromCharCode(Math.floor(Math.random() * 10) + 48)
+      
   }
   
   // If User confirms they want special characters, a random special character is chosen
@@ -79,8 +80,7 @@ function generatePassword() {
   }
 
   // For Loop created to choose a random character (based on the User's preferences) for each character in the specified password length
-  for (var i = 0; i < confirmLength; i++) {
-      var randomNumber = Math.floor(Math.random() * functionAr.length);
+  for (var i = 0; i < functionAr; i++) {
       var randomCharacter = functionAr[randomFunction];
       passwordgen = passwordgen + randomCharacter;
   }
