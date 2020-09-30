@@ -3,7 +3,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/marandaz/password-generator">
-    <img src="./Images/logo.png" alt="Logo" width="max" height="600px">
+    <img src="./Assets/logo.png" alt="Logo" width="max" height="600px">
   </a>
 
   <h3 align="center">PASSWORD GENERATOR</h3>
@@ -42,9 +42,9 @@
 
 <p align="center">
 <a href="https://marandaz.github.io/password-generator/">
-    <img src="Images/initial.png" alt="on initial page load"/>
+    <img src="Assets/initial.png" alt="on initial page load"/>
     .
-    <img src="Images/clickedgenerate.png" alt="on first click"/>
+    <img src="Assets/clickedgenerate.png" alt="on first click"/>
 <!-- MARANDA TO UPDATE LINK ABOVE SO IT WORKS -->
 </a>
 </p>

@@ -41,15 +41,15 @@ function generatePassword() {
   }
 
   if (confirmUppercase) {
-    functionAr.push(getRandomUpper)();
+    functionAr.push(getRandomUpper);
   }
   
   if (confirmNumbers) {
-    functionAr.push(getRandomNumber)();
+    functionAr.push(getRandomNumber);
   }
   
   if (confirmSpecial) {
-    functionAr.push(getRandomSpecial)();
+    functionAr.push(getRandomSpecial);
   }
 
   // If all Confirms return false, User receives error alert message that at least one must be true to receive random password
