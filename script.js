@@ -34,55 +34,54 @@ function generatePassword() {
   var confirmSpecial = confirm("Do you want special characters in your password?");
   
   
-  // If any of the above Confirms are true, they will be pushed into the array of functionAr
-  var functionAr = [];
+  // If any of the above Confirms are true, they will be pushed into the array of characterAr
+  var characterAr = "";
   if (confirmLowercase) {
-    functionAr.push(getRandomLower())
+    characterAr = characterAr + getLower();
   }
 
   if (confirmUppercase) {
-    functionAr.push(getRandomUpper());
+    characterAr = characterAr + getUpper();
   }
   
   if (confirmNumbers) {
-    functionAr.push(getRandomNumber());
+    characterAr = characterAr + getNumber();
   }
   
   if (confirmSpecial) {
-    functionAr.push(getRandomSpecial());
+    characterAr = characterAr + getSpecial();
   }
 
   // If all Confirms return false, User receives error alert message that at least one must be true to receive random password
-  if (functionAr.length === 0) {
+  if (characterAr.length === 0) {
     return alert("Must confirm at least one character type.")
   }
 
   // If User confirms they want lowercase, a random lowercase letter is chosen
-  function getRandomLower() {
-      return String.fromCharCode(Math.floor(Math.random() * 26) + 97)
+  function getLower() {
+      return "abcdefghijklmnopqrstuvwxyz"
   }
   
   // If user confirms they want uppercase, a random uppercase letter is chosen
-  function getRandomUpper() {
-      return String.fromCharCode(Math.floor(Math.random() * 26) + 65)
+  function getUpper() {
+      return "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
   }
   
   // If User confirms they want numbers, a random number is chosen
-  function getRandomNumber() {
-      return String.fromCharCode(Math.floor(Math.random() * 10) + 48)
-      
+  function getNumber() {
+      return "1234567890"
   }
   
   // If User confirms they want special characters, a random special character is chosen
-  function getRandomSpecial() {
+  function getSpecial() {
     const symbols = '!@#$%^&*(){}[]=<>/,.'
-      return symbols[Math.floor(Math.random() * symbols.length)];
+      return symbols
   }
 
   // For Loop created to choose a random character (based on the User's preferences) for each character in the specified password length
   for (var i = 0; i < confirmLength; i++) {
-      var randomCharacter = functionAr[randomCharacter];
-      passwordgen = passwordgen + randomCharacter;
+      var randomCharacter = [Math.floor(Math.random() * characterAr.length)];
+      passwordgen = passwordgen + characterAr[randomCharacter];
   }
   // Returns the random password on the User's screen
   return passwordgen;
