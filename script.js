@@ -37,19 +37,19 @@ function generatePassword() {
   // If any of the above Confirms are true, they will be pushed into the array of functionAr
   var functionAr = [];
   if (confirmLowercase) {
-    functionAr.push(getRandomLower)();
+    functionAr.push(getRandomLower())
   }
 
   if (confirmUppercase) {
-    functionAr.push(getRandomUpper);
+    functionAr.push(getRandomUpper());
   }
   
   if (confirmNumbers) {
-    functionAr.push(getRandomNumber);
+    functionAr.push(getRandomNumber());
   }
   
   if (confirmSpecial) {
-    functionAr.push(getRandomSpecial);
+    functionAr.push(getRandomSpecial());
   }
 
   // If all Confirms return false, User receives error alert message that at least one must be true to receive random password
@@ -80,11 +80,10 @@ function generatePassword() {
   }
 
   // For Loop created to choose a random character (based on the User's preferences) for each character in the specified password length
-  for (var i = 0; i < functionAr; i++) {
-      var randomCharacter = functionAr[randomFunction];
+  for (var i = 0; i < confirmLength; i++) {
+      var randomCharacter = functionAr[randomCharacter];
       passwordgen = passwordgen + randomCharacter;
   }
-
   // Returns the random password on the User's screen
   return passwordgen;
 }
